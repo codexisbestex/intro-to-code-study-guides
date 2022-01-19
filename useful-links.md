@@ -1,0 +1,4 @@
+- [Linux/Shell Cheatsheet](https://rcg.group.shef.ac.uk/courses/linux/shell-cheatsheet.html)
+- [17 Terminal Commands Every Programmer Should Know](https://towardsdatascience.com/17-terminal-commands-every-programmer-should-know-4fc4f4a5e20e)
+- [Difference between Terminal, Console, Shell, and Command Line](https://www.geeksforgeeks.org/difference-between-terminal-console-shell-and-command-line/)
+- [Bash Tilde Expansion](https://www.thegeekstuff.com/2010/06/bash-tilde-expansion/)
