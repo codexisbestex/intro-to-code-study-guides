@@ -11,6 +11,7 @@
 3. What is a branch?
 4. What is merging?
 5. What is a remote?
+6. What is `HEAD`?
 
 ## Common git commands
 
@@ -68,11 +69,11 @@ What can `git clone` be used to do?
 
 ### Basic snapshotting
 
-1. What is 'snapshotting' in the context of git?
+What is 'snapshotting' in the context of git?
 
 #### `git add`
 
-What can `git add` be used to do
+What can `git add` be used to do?
 
 ##### Using `git add`:
 
@@ -118,36 +119,22 @@ What can `git add` be used to do
 <command here>
 ```
 
+#### `git restore`
+
+What can be `git restore` be used for?
+
+##### Using `git restore`
+
+1. You've accidently staged the file, `unfinishedFunc.js`, before it was ready to be committed; unstage it.
+
+```shell
+<command here>
+```
+
+2. You've realized you don't want to keep the changes you've made to `changedFunc.js`; return the repo back to the state it was in before you added that file.
+
 #### `git status`
 
-#### `git reset`
+What does `git status` do?
 
-### Branching and merging
-
-#### `git branch`
-
-#### `git checkout`
-
-#### `git log`
-
-#### `git tag`
-
-#### `git stash`
-
-### Sharing and updating projects
-
-#### `git fetch`
-
-#### `git pull`
-
-#### `git push`
-
-#### `git remote`
-
-### Patching
-
-#### `git cherry-pick`
-
-#### `git revert`
-
-#### `git rebase`
+When can you use `git status` in the snapshotting process?
