@@ -4,16 +4,33 @@
 
 1. What is git?
 
+- Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows
+
 ## Elements of git
 
 1. What is a repository?
-2. What is a commit?
+   - A repo is a folder inside a project that keeps track of your project history/updates.
+2. ## What is a commit?
 3. What is a branch?
+   - Branches are a way to add new features that don't interfere or affect the main project
 4. What is merging?
+   - Putting forked branch histories together
 5. What is a remote?
+
+- A server that contains a copy of the git repo typically at an online address.
+
 6. What is `HEAD`?
+   -The branch you are currently working in
 
 ## Common git commands
+
+- `git status`
+- `git init`
+- `git remote`
+- `git branch`
+- `git add .`
+- `git commit`
+- `git push origin`/ `git push -u origin`
 
 ### Setup and config
 
@@ -21,18 +38,20 @@
 
 What can `git config` be used to do?
 
+- Set up basic information in the repo
+
 ##### Using `git config`:
 
 1. Set your user name as it will appear on commits you make
 
 ```shell
-<command here>
+git config --global user.name "Angelique Rivera"
 ```
 
 2. Set your user email as it will appear on commits you make
 
 ```shell
-<command here>
+git config --global user.email "angeliqueriveramorales@gmail.com"
 ```
 
 ### Getting and creating projects
@@ -41,35 +60,41 @@ What can `git config` be used to do?
 
 What can `git init` be used to do?
 
+- Initiate a project
+
 ##### Using `git init`:
 
 1. Create a project called `my-awesome-repo`
 
 ```shell
-<command here>
+git init my-awesome-repo
 ```
 
 #### `git clone`
 
 What can `git clone` be used to do?
 
+- Copy a repo onto my project
+
 ##### Using `git clone`:
 
 1. Clone a project from a local repo on your device: `<home dir>/programming/local-repo`
 
 ```shell
-<command here>
+git clone <home dir>/programming/local-repo
 ```
 
 2. Clone a project from a remote repo: `https://github.com/chrismejia/intro-to-code-study-guides.git`
 
 ```shell
-<command here>
+git clone `https://github.com/chrismejia/intro-to-code-study-guides.git`
 ```
 
 ### Basic snapshotting
 
 What is 'snapshotting' in the context of git?
+
+- Staging and committing new content in your repo
 
 #### `git add`
 
