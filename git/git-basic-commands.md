@@ -4,23 +4,26 @@
 
 1. What is git?
 
-- Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows
+- Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows. Git is an open sourced distributed version control system.
+-
 
 ## Elements of git
 
 1. What is a repository?
    - A repo is a folder inside a project that keeps track of your project history/updates.
-2. ## What is a commit?
+2. What is a commit?
+   - A snapshot of the repo at a specific moment
 3. What is a branch?
    - Branches are a way to add new features that don't interfere or affect the main project
 4. What is merging?
-   - Putting forked branch histories together
+   - Putting forked branch histories together; this is where you merge commits by selecting the parts of each branch's latest commit to apply to the merge branches next commit.
+     - `main & fix/headerStyling`
 5. What is a remote?
 
 - A server that contains a copy of the git repo typically at an online address.
 
 6. What is `HEAD`?
-   -The branch you are currently working in
+   - The pointer to the current commit you are viewing
 
 ## Common git commands
 
@@ -48,6 +51,8 @@ What can `git config` be used to do?
 git config --global user.name "Angelique Rivera"
 ```
 
+- Global is a flag that allows you to set universal values for git
+
 2. Set your user email as it will appear on commits you make
 
 ```shell
@@ -60,7 +65,7 @@ git config --global user.email "angeliqueriveramorales@gmail.com"
 
 What can `git init` be used to do?
 
-- Initiate a project
+- Initiates an empty git repo
 
 ##### Using `git init`:
 
@@ -74,7 +79,9 @@ git init my-awesome-repo
 
 What can `git clone` be used to do?
 
-- Copy a repo onto my project
+- Clone an established repo
+- Creates remote tracking branches for each branch in the cloned repo
+- Creates and checks out an initial branch that is forked from the cloned repo's currently active branch
 
 ##### Using `git clone`:
 
@@ -87,7 +94,7 @@ git clone <home dir>/programming/local-repo
 2. Clone a project from a remote repo: `https://github.com/chrismejia/intro-to-code-study-guides.git`
 
 ```shell
-git clone `https://github.com/chrismejia/intro-to-code-study-guides.git`
+git clone https://github.com/chrismejia/intro-to-code-study-guides.git
 ```
 
 ### Basic snapshotting
@@ -100,18 +107,21 @@ What is 'snapshotting' in the context of git?
 
 What can `git add` be used to do?
 
+- Staging any new changes
+- Updates the index using the current content found in the working tree aka what's different between the last commit snapshot and the current state of the files to prepare for a commit
+
 ##### Using `git add`:
 
 1. Add the new file, `new-code.js`, to the staging area.
 
 ```shell
-<command here>
+git add new-code.js
 ```
 
 2. Add the new file, `new-code.js`, and the modified file, `changed-code.js`, to the staging area.
 
 ```shell
-<command here>
+git add new-code.js changed-code.js
 ```
 
 3. Add all new and modified files to the staging area.
