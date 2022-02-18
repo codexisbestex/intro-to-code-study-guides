@@ -127,49 +127,57 @@ git add new-code.js changed-code.js
 3. Add all new and modified files to the staging area.
 
 ```shell
-<command here>
+git add .
 ```
 
 #### `git commit`
 
 1. What can `git commit` be used to do?
 
+- Records changes to the repo
+
 ##### Using `git commit`:
 
 1. Commit the staged with, `new-code.js`, to the staging area.
 
 ```shell
-<command here>
+git commit -m "added new code.js"
 ```
 
 2. Add the new file, `new-code.js`, and the modified file, `changed-code.js`, to the staging area.
 
 ```shell
-<command here>
+git commit -m "added new code.js" -m "modified changed-code.js"
 ```
 
 3. Add all new and modified files to the staging area.
 
 ```shell
-<command here>
+git commit -m
 ```
 
 #### `git restore`
 
 What can be `git restore` be used for?
 
+- Unstaging and discarding uncommitted local changes to repo
+
 ##### Using `git restore`
 
 1. You've accidently staged the file, `unfinishedFunc.js`, before it was ready to be committed; unstage it.
 
 ```shell
-<command here>
+git restore unfinishedFunc.js
 ```
 
 2. You've realized you don't want to keep the changes you've made to `changedFunc.js`; return the repo back to the state it was in before you added that file.
 
+- `git reset`
+
 #### `git status`
 
 What does `git status` do?
+
+- Checks status of the working tree
 
 When can you use `git status` in the snapshotting process?
