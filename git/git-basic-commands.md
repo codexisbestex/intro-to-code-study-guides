@@ -134,26 +134,65 @@ git add .
 
 1. What can `git commit` be used to do?
 
-- Records changes to the repo
+- Creates a snapshot of the project's currently staged changes.
 
 ##### Using `git commit`:
 
-1. Commit the staged with, `new-code.js`, to the staging area.
+1. Commit the staged file, `new-code.js`.
 
 ```shell
 git commit -m "added new code.js"
 ```
 
-2. Add the new file, `new-code.js`, and the modified file, `changed-code.js`, to the staging area.
+2. Add a second message (body) to the commit.
 
 ```shell
-git commit -m "added new code.js" -m "modified changed-code.js"
+git commit -m "feat: added/changed files" -m "modified changed-code.js; added new-code.js"
 ```
 
-3. Add all new and modified files to the staging area.
+Best practices:
+
+- The first message (`-m`) is a header/subject line.
+- Limit subject line to 50 characters; be as concise as possible
+- Add additional `-m`s for more context
+- The last (couple of) `-m` should point to what this commit resolves issue-wise/ other issues to refer to as related
+
+[Example below taken from: How to Write a Git Commit Message](https://cbea.ms/git-commit/)
+
+```
+Summarize changes in around 50 characters or less
+
+More detailed explanatory text, if necessary. Wrap it to about 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like `log`, `shortlog`
+and `rebase` can get confused if you run the two together.
+
+Explain the problem that this commit is solving. Focus on why you
+are making this change as opposed to how (the code explains that).
+Are there side effects or other unintuitive consequences of this
+change? Here's the place to explain them.
+
+Further paragraphs come after blank lines.
+
+ - Bullet points are okay, too
+
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between, but conventions
+   vary here
+
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789
+```
+
+3. Add all new and modified files to the staging area and commit, all in one command. Write a commit message for these newly added files.
 
 ```shell
-git commit -m
+git commit -am "commit message subject summary"
 ```
 
 #### `git restore`
@@ -172,7 +211,7 @@ git restore unfinishedFunc.js
 
 2. You've realized you don't want to keep the changes you've made to `changedFunc.js`; return the repo back to the state it was in before you added that file.
 
-- `git reset`
+- `git restore --staged changedFunc.js`
 
 #### `git status`
 
@@ -180,4 +219,14 @@ What does `git status` do?
 
 - Checks status of the working tree
 
+What is the working tree?
+
+- Consists of files that you are currently working on
+
 When can you use `git status` in the snapshotting process?
+
+- After files have been created/modified (to view what is or isn't staged)
+- After you've added files that are ready to commit to view what has been staged
+- After you've made a commit
+
+[Git workflow](https://backlog.com/git-tutorial/git-workflow/)

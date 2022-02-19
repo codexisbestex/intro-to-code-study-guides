@@ -14,3 +14,5 @@
 - [Git in a nutshell](https://kancane.nl/git-in-a-nutshell/)
 - [Git - The Simple Guide](https://rogerdudler.github.io/git-guide/)
 - [Top 35 Git Commands With Examples: DZone](https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus)
+- [Git workflow](https://backlog.com/git-tutorial/git-workflow/)
+- [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
