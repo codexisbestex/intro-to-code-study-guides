@@ -2,7 +2,7 @@
 
 ## `pwd`
 
-1. What does it stand for?
+1. What does it stand for? Printing Work Directory
 2. What does `pwd` do?
 
 ### Using `pwd`
@@ -10,26 +10,26 @@
 1. Show `pwd` command help info
 
 ```shell
-<command here>
+pwd
 ```
 
 ## `mkdir`
 
-1. What does it stand for?
-2. What does `mkdir` do?
+1. What does it stand for? make directory
+2. What does `mkdir` do? create a new directory(folder) in the current repo you are in
 
 ### Using `mkdir`:
 
 1.  Show `mkdir` command help info
 
 ```shell
-<command here>
+mkdir folder name
 ```
 
 2.  Create a directory in your current working directory (`/<current dir/folderOne>`)
 
 ```shell
-<command here>
+mkdir
 ```
 
 3.  Create a nested directory in your current working directory (`/<current dir>/fol1/fol2/fol3`)
@@ -40,33 +40,33 @@
 
 ## `cd`
 
-1. What does it stand for?
-2. What does `cd` do?
+1. What does it stand for? current directory
+2. What does `cd` do? see which directory you are one
 
 ### Using `cd`:
 
 1. Show `cd` command help
 
 ```shell
-<command here>
+cd
 ```
 
 2. Switching into a child directory
 
 ```shell
-<command here>
+cd child directory
 ```
 
 3. Switching into the parent directory
 
 ```shell
-<command here>
+cd parent directory
 ```
 
 4. Switching to an exact directory (i.e. from `/<home dir>` to `/testing/projects/my-shiny-project`)
 
 ```shell
-<command here>
+cd /testing/projects/my-shiny-project
 ```
 
 5. Switching to your home directory from anywhere
@@ -75,36 +75,36 @@
    - Method 2 hint: How can you use a tilde (~) with `cd`?
 
 ```shell
-<command here>
+cd ~$HOME
 ```
 
 ```shell
-<command here>
+cd .
 ```
 
 6. Switching to your root directory from anywhere
 
 ```shell
-<command here>
+cd ..
 ```
 
 ## `ls`
 
-1. What does it stand for?
-2. What does `ls` do?
+1. What does it stand for? list
+2. What does `ls` do? shows all files/content in current directory
 
 ### Using `ls`:
 
 1. Show `ls` command help info
 
 ```shell
-<command here>
+ls
 ```
 
 2. List the contents of the current directory
 
 ```shell
-<command here>
+ls current directory
 ```
 
 3. List the contents that also shows hidden files in the current directory
