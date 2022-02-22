@@ -2,18 +2,18 @@
 
 ## Basics & related terms
 
-1. What is a 'terminal'?
-2. What is a 'console'?
-3. What is a 'shell'?
-4. What is a 'command-line'?
-5. What is a 'tty'?
+1. What is a 'terminal'? An interface that gives you access to the command line
+2. What is a 'console'? Allows users to input commands and and receive visual output
+3. What is a 'shell'? Software that provides an interface and allows the user to interact with the computer
+4. What is a 'command-line'? the area you are placing your code in order to run the commands
+5. What is a 'tty'? short for "teletype", a device that lets you interact with the system by sending and receiving data
 
 ## Environments and their defaults
 
-1.  What is the default shell for Macs?
+1.  What is the default shell for Macs? Zsh?
 
-2.  What is the default shell for Windows?
+2.  What is the default shell for Windows? Powershell
 
-3.  What is the default shell for most Linux distros?
+3.  What is the default shell for most Linux distros? bash
 
-4.  What is 'git bash'?
+4.  What is 'git bash'? an application for Windows that provides Unix based shell utilities and git line commands
