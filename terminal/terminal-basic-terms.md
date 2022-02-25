@@ -2,7 +2,7 @@
 
 ## Basics & related terms
 
-1. What is a 'terminal'? An interface that gives you access to the command line
+1. What is a 'terminal'? An interface that gives you access to the command linegit
 2. What is a 'console'? Allows users to input commands and and receive visual output
 3. What is a 'shell'? Software that provides an interface and allows the user to interact with the computer
 4. What is a 'command-line'? the area you are placing your code in order to run the commands
