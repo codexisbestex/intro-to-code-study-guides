@@ -1,8 +1,18 @@
 # Shell environment variables
 
-1. What is a shell environment variable? // did you mean to put shell vs environment? getting mixed results when looking this up
-2. What character is always in front of an environment variable name? `$`
-3. Are shell variable names case-sensitive? yes, must always be capitalized
+1. What is a shell environment variable?
+
+- Environment variables are variables that are defined by the current shell and they are inherited by any child shells or processes.
+- `printenv`
+- A term variable
+
+2. What character is always in front of an bash environment variable name?
+
+- `$`
+
+3. Are shell variable names case-sensitive?
+
+yes, must always be capitalized
 
 ## Common cross-platform variables
 
@@ -13,16 +23,14 @@
 
 ### `$HOME`
 
-1. What does the `$HOME` variable contain? the home directory
+1. What does the `$HOME` variable contain? the location of the home directory
 2. Give an example of its usage in a command. Detail what the command would do.
-   `cd $HOME`
+   `cd $HOME`: Change to home directory (from anywhere)
 
 ### `$SHELL`
 
-1. What does the `$SHELL` variable contain? bash
-2. Give an example of its usage in a command. Detail what the command would do.
+1. What does the `$SHELL` variable contain? the location of where the files that run the current shell are
 
 ### `$USER`; Windows: `$USERNAME`
 
 1. What does the `$USER/$USERNAME` variable contain? The account name of the user
-2. Give an example of its usage in a command. Detail what the command would do.
